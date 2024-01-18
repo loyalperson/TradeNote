@@ -106,7 +106,7 @@ async function updateSchema() {
           <option v-for="item in timeZones" :key="item.value" :value="item">{{ item }}</option>
         </select>
       </div>
-      <button class="mt-3 w-100 btn btn-lg btn-primary" type="submit" :disabled="signingUp">{{ pageId == 'login' ?
+      <button class="blueBtn mt-3 w-100 btn btn-lg btn-dark" type="submit" :disabled="signingUp">{{ pageId == 'login' ?
         "Log&nbsp;in" : "Register" }}<span v-if="signingUp" class="ms-2 spinner-border spinner-border-sm" role="status"
           aria-hidden="true"></span></button>
     </form>
