@@ -201,7 +201,7 @@ export async function useImportTrades(e, param2) {
             //if still false, send alert else create
             if (!gotExistingTradesArray.value) {
                 spinnerLoadingPage.value = false
-                alert("TradeNote didn't have enough time to fetch existing trades from database before parsing your file. Please refresh the page and wait a little bit longer before adding your file and thus giving TradeNote some more time to run this background job.")
+                alert("NoeticTrader didn't have enough time to fetch existing trades from database before parsing your file. Please refresh the page and wait a little bit longer before adding your file and thus giving NoeticTrader some more time to run this background job.")
                 return;
             }
             if (!importFileError) {

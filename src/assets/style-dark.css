@@ -44,7 +44,7 @@ body {
 }
 
 .text-blue {
-    color: var(--blue-color)
+    color: #5851DB
 }
 
 main {
@@ -178,11 +178,11 @@ input[type="month"]::-webkit-calendar-picker-indicator {
 }
 
 input:checked+.slider {
-    background-color: var(--blue-color);
+    background-color: #5851DB;
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px var(--blue-color);
+    box-shadow: 0 0 1px #5851DB;
 }
 
 input:checked+.slider:before {
@@ -291,7 +291,7 @@ input:checked+.slider:before {
 
 .dropdown-item:hover,
 .dropdown-item:active {
-    background-color: var(--blue-active-color);
+    background-color: #7871FB;
     color: var(--white-87);
 }
 
@@ -358,11 +358,11 @@ input:checked+.slider:before {
 /*=================== NAV BAR AND SIDE MENU ===================*/
 
 .activeNavCss {
-    color: var(--blue-active-color) !important;
+    color: #7871FB !important;
 }
 
 .nav-link:hover {
-    color: var(--blue-color) !important;
+    color: #5851DB !important;
 }
 
 .sideMenu {
@@ -447,6 +447,7 @@ img.logo {
 }
 
 #navbarDropdown {
+    /* background-color: #7871FB; */
     color: var(--white-87);
 }
 
@@ -455,7 +456,7 @@ img.logo {
 }
 
 .nav-link:hover {
-    color: var(--blue-color);
+    color: #5851DB;
 }
 
 .nav-link:active {
@@ -655,7 +656,7 @@ img.logo {
 .btn-outline-primary:active {
     color: white;
     border-color: #2ea2d9;
-    background-color: var(--blue-color) !important;
+    background-color: #5851DB !important;
 }
 
 .btn-red {
@@ -887,11 +888,11 @@ ul.timeline>li:before {
 
 /* BUTTONS */
 .blueBtn {
-    background: var(--blue-color)
+    background: #7871FB
 }
 
 .blueBtn:hover {
-    background: var(--blue-active-color)
+    background: #5851DB
 }
 
 /* FOOTER BOTTOM */
@@ -1078,7 +1079,7 @@ h4 {
 }
 
 .shepherd-button {
-    background-color: var(--blue-color);
+    background-color: #5851DB;
 }
 
 .shepherd-button:hover {

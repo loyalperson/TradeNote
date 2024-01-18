@@ -1,6 +1,6 @@
-Different brokers have different export options so on this page you will find instructions for some of the brokers supported by TradeNote.
+Different brokers have different export options so on this page you will find instructions for some of the brokers supported by NoeticTrader.
 
-Export instructions are written with the help other TradeNote users in the community. Contact me if you want to contribute as well.
+Export instructions are written with the help other NoeticTrader users in the community. Contact me if you want to contribute as well.
 
 You contact me via [Discord](https://discord.gg/ZbHekKYb85 "Discord") if you wish to integrate your broker. Alternatively, you can use the [template](https://github.com/Eleven-Trading/TradeNote/blob/main/brokers/Template.csv "template") and adapt it to your export file.
 
@@ -47,7 +47,7 @@ Note : make sure to input one execution per line, not aggregated trade. So one l
 #### Setting up a new Flex Query
 1. Under the Trade Confirmation Flex Query panel, click the Create, +, button.
 2. At the Create Trade Confirmation Flex Query page, select the following options
-    1. Trade Confirmation Flex Query Details: Provide a Query Name (ex. TradeNoteExport)
+    1. Trade Confirmation Flex Query Details: Provide a Query Name (ex. NoeticTraderExport)
     2. Sections
         1. Click Trade Confirmation and only select Executions
         2. From there, you can either
@@ -78,13 +78,13 @@ Note : make sure to input one execution per line, not aggregated trade. So one l
 
 #### Executing your Flex Query
 1. Use the Run (right arrow icon) to generate a new report
-2. In the TradeNoteExport (name of your Flex Query) dialog, select
+2. In the NoeticTraderExport (name of your Flex Query) dialog, select
     1. Period: <Your desired date range>
     2. Format: CSV
     3. Click Run
 3. At this point, your file should be downloaded and available to use
 
-#### Cleanup before importing to TradeNote
+#### Cleanup before importing to NoeticTrader
 Before attempting to import data, there are a few things that may help.
 - Remove any empty lines that may be present in your CSV file
 - If multiple accounts are present, isolate them to 1 account at a time
@@ -113,9 +113,9 @@ Please use the standalone thinkorswim application and follow the steps below.
 3. Press the "Retrieve Orders" button after entering the date range that you want to import.
 4. Sort by Filled/Canceled orders in ascending order (e.g., oldest first) by changing the sort order.
 5. Select "Copy" by right-clicking after clicking (ticking) the upper-left "square" right beneath "Symbol Filter" label. 
-6. Paste the transactions into the text box in TradeNote.
+6. Paste the transactions into the text box in NoeticTrader.
 
-Note: currently, TradeNote does not take into account ECN fees (available soon).
+Note: currently, NoeticTrader does not take into account ECN fees (available soon).
 
 # Tradovate
 1. click on the Account tab, then choose the account to export.

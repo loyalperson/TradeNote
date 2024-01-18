@@ -1,5 +1,5 @@
 
-<h2 align="center">TradeNote</h2>
+<h2 align="center">NoeticTrader</h2>
 <h4 align="center" style='margin-bottom:30px'>- Open Source Trading Journal -</h4>
 
 
@@ -7,7 +7,7 @@
 ### About
 There are numerous great and very powerful trading journals out there. However, I wanted to build a journal for traders who care about data security and privacy but also for individuals that need simplicity and flexibility.
 
-By creating and sharing TradeNote as an open source project, I hope to help other days traders like myself store, discover and recollect trade patterns so they can become and remain consistent and profitable traders.
+By creating and sharing NoeticTrader as an open source project, I hope to help other days traders like myself store, discover and recollect trade patterns so they can become and remain consistent and profitable traders.
 
 ![dashboard](https://f003.backblazeb2.com/file/7ak-public/tradenote/TradeNote-Dashboard.png "Dashboard")
 
@@ -19,33 +19,33 @@ For support or feedback, feel free to join our [Discord](https://discord.gg/ZbHe
 You can see upcoming features and project development on the [project page](https://github.com/orgs/Eleven-Trading/projects/1 "Project").
 
 #### Built with
-TradeNote is a responsive website that runs on VueJs, JS and HTML and uses [Parse](https://parseplatform.org/ "Parse") for its backend.
+NoeticTrader is a responsive website that runs on VueJs, JS and HTML and uses [Parse](https://parseplatform.org/ "Parse") for its backend.
 
 #### Coffee
 If you like this project, <font size="5">please 🌟 this repository</font> and don't hesitate to show me <s>the money</s> love ;)
 <p><a href='https://ko-fi.com/eleven70433' target='_blank'><img height='35' style='margin-top:20px;border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a></p>
 
 
-# TradeNote
+# NoeticTrader
 ### Structure
-TradeNote is divided in 2 sections, each being an essential building block for becoming a consistent trading and managing your trading business.
+NoeticTrader is divided in 2 sections, each being an essential building block for becoming a consistent trading and managing your trading business.
 
 #### Analyze
-TradeNote offers a dashboard, daily view and calendar view so you can measure your progress. You can easily filter your trades by month or date range.
+NoeticTrader offers a dashboard, daily view and calendar view so you can measure your progress. You can easily filter your trades by month or date range.
 
 
 #### Reflect
-With TradeNote you can keep a daily diary of your trading journey to work on your trader psychology as well as add annotated screenshots of interesting setups or your entries. You can also write your (yearly) playbook.
+With NoeticTrader you can keep a daily diary of your trading journey to work on your trader psychology as well as add annotated screenshots of interesting setups or your entries. You can also write your (yearly) playbook.
 
 ### Trades, Assets and Brokers
 #### Supported trades
-TradeNote supports intraday and swing trades but keep in mind that the project arose from a personal need and as such is most widely used (and tested) for intraday stock trades (using TradeZero Broker).
+NoeticTrader supports intraday and swing trades but keep in mind that the project arose from a personal need and as such is most widely used (and tested) for intraday stock trades (using TradeZero Broker).
 
 #### Supported Assets. 
-Depending on the broker and thanks to the contribution of the community, you can import and journal the following assets in TradeNote: Stocks, Futures, Options (only tested on single options) and Forex. 
+Depending on the broker and thanks to the contribution of the community, you can import and journal the following assets in NoeticTrader: Stocks, Futures, Options (only tested on single options) and Forex. 
 
 #### Supported Brokers
-Please look at the [brokers folder](https://github.com/Eleven-Trading/TradeNote/blob/main/brokers "brokers folder") to see the list of supported brokers and instructions for exporting and importing to TradeNote.
+Please look at the [brokers folder](https://github.com/Eleven-Trading/TradeNote/blob/main/brokers "brokers folder") to see the list of supported brokers and instructions for exporting and importing to NoeticTrader.
 
 You can contact me via [Discord](https://discord.gg/ZbHekKYb85 "Discord") if you wish to integrate your broker.
 
@@ -78,7 +78,7 @@ Upload screenshots of you trades ("Entry" option) or simply an interesting setup
 # Setup
 ## Installation
 ### ❗Important Notice❗
-TradeNote uses MongodDB as its database. Please make sure to follow MongoDB's recommendations and requirements before installing and running TradeNote with MongoDB. 
+NoeticTrader uses MongodDB as its database. Please make sure to follow MongoDB's recommendations and requirements before installing and running NoeticTrader with MongoDB. 
 
 As an example, some users have experienced issues running MongoDB on a Raspberry Pi. At the time of writing, they managed to make it work using v4.4.8 of MongoDB rather than the latest version.
 
@@ -94,7 +94,7 @@ For detailed information, please read MongdoDB's [production notes ](https://www
 1. Download the docker-compose.yml file
 2. Run `docker compose up -d`
 
-This will automatically setup the database (mongodDB) and the TradeNote app.
+This will automatically setup the database (mongodDB) and the NoeticTrader app.
 
 You can then access the website on http://localhost:8080.
 
@@ -109,7 +109,7 @@ If you cannot access the website, please refer to the importante notice above (a
 #### Installation
 You need to have a running MongoDB database. Please see their [Docker Hub](https://hub.docker.com/_/mongo "Docker Hub") for instructions.
 
-Then, run the TradeNote image with its environment variables.
+Then, run the NoeticTrader image with its environment variables.
 
 ```
 docker run \
@@ -130,10 +130,10 @@ docker run \
 
 ### Local installation (advanced)
 #### Docker
-If you want to run the latest version of TradeNote you can also build the image locally, directly from GitHub repository.
+If you want to run the latest version of NoeticTrader you can also build the image locally, directly from GitHub repository.
 
 1. Clone from github
-2. cd into TradeNote directory 
+2. cd into NoeticTrader directory 
 3. Run
     - For Docker Compose : Run `docker compose -f docker-compose-local.yml up -d`
     - For Docker: run `docker build -f docker/Dockerfile . -t tradenote:<tag>`
@@ -162,16 +162,16 @@ Please make sure to follow the instructions in the [brokers folder](https://gith
 
 ##### Avoiding P&L Discrepancy
 To avoid open positions and/or P&L Discrepancy when importing swing trades, please make sure of the following. 
-1. Begin importing from a point in time where you were flat (no previous open positions). If you begin importing from a point in time where you had pre-existing positions, there is a chance the data will be incorrect as TradeNote doesn’t know about these existing positions. 
+1. Begin importing from a point in time where you were flat (no previous open positions). If you begin importing from a point in time where you had pre-existing positions, there is a chance the data will be incorrect as NoeticTrader doesn’t know about these existing positions. 
 2. Alternatively, before importing your file, if you know it contains execution(s) from an open position (and that you're closing or adding to), simply remove that/these execution(s).
 
 Example 1 (recommended)
 - You remember that on the 10th of August 2022 you did not have any open trades from before the 10th of August 2022
 - You import your trades between 10/08/22-30/11/2023.
 - From there, if you later decide to import trades before 10/08/22 they will likely be inaccurate and cause future discrepancies.
-- If you import trades in between the dates, for example on the 12/03/2023, it will say "already imported" (this is standard TradeNote behavior - you cannot import already imported dates)
+- If you import trades in between the dates, for example on the 12/03/2023, it will say "already imported" (this is standard NoeticTrader behavior - you cannot import already imported dates)
 - If you import trades after 30/11/23 it will work.
-- The best is to start with a clean TradeNote database but it is not mandatory as long as you respect these steps.
+- The best is to start with a clean NoeticTrader database but it is not mandatory as long as you respect these steps.
 
 Example 2 (advanced)
 - You want to start your imports 10th of August 2022, but you know you have 1 open trade from before.
@@ -189,13 +189,13 @@ P&L as well as partial close is calculated on the closing day.
 This project uses [Parse](https://github.com/parse-community "Parse") as its backend framework, for the following reasons: 
 1. Manage the authentication (flow)
 2. Parse is a great framework for all API communications with the mongo database
-3. Parse acts as the server so that TradeNote does not need to run any server on its own, making it faster and lighter. 
+3. Parse acts as the server so that NoeticTrader does not need to run any server on its own, making it faster and lighter. 
 
 ### Viewing the database (optional)
 Additionally, if you want to view and manage the database, you can use [MongoDB Compass](https://github.com/parse-community "MongoDB Compass") or install and run the [Parse Dashboard](https://github.com/parse-community/parse-dashboard "Parse Dashboard").
 
 ### PostHog
-This projects uses [PostHog](https://github.com/PostHog/posthog "PostHog") as its product analytics suite to collect <u>anonymous</u> analytics about TradeNote installations and page views. This helps me better understand if and how people are using TradeNote and evaluate the outreach of my project. If you want to opt-out of this program, you can simply add `-e ANALYTICS_OFF=true` when running the docker image. 
+This projects uses [PostHog](https://github.com/PostHog/posthog "PostHog") as its product analytics suite to collect <u>anonymous</u> analytics about NoeticTrader installations and page views. This helps me better understand if and how people are using NoeticTrader and evaluate the outreach of my project. If you want to opt-out of this program, you can simply add `-e ANALYTICS_OFF=true` when running the docker image. 
 
 
 ## Backup data
@@ -205,7 +205,7 @@ During installation, mongoDB runs with persistent data. This way, if you restart
 ### Backup mongoDB
 Additionally, you can, and should, backup your database. 
 
-For convenience, here is an example using [s3cmd](https://s3tools.org/s3cmd "s3cmd") for backing up your database. As this is not part of the TradeNote projet, I will unfortunately not be able to provide support on this part. But you will find more information about this on google and stackoverflow. 
+For convenience, here is an example using [s3cmd](https://s3tools.org/s3cmd "s3cmd") for backing up your database. As this is not part of the NoeticTrader projet, I will unfortunately not be able to provide support on this part. But you will find more information about this on google and stackoverflow. 
 1. Install [s3cmd](https://s3tools.org/s3cmd "s3cmd")
 2. Configure the s3cfg config file
 3. Run the [bash file](https://github.com/Eleven-Trading/TradeNote/blob/main/backup-mongodb.sh "bash file") with the correct variables

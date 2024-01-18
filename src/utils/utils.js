@@ -279,7 +279,7 @@ export function useInitShepherd() {
     }
     tour.addSteps([{
         id: 'step1',
-        text: 'Welcome onboard. This guided tutorial will show you how TradeNote works.',
+        text: 'Welcome onboard. This guided tutorial will show you how NoeticTrader works.',
         buttons: [{
             text: 'Exit',
             action: tour.complete,
@@ -290,7 +290,7 @@ export function useInitShepherd() {
         }]
     }, {
         id: 'step2',
-        text: "In the side menu, you can navigate all TradeNote pages.",
+        text: "In the side menu, you can navigate all NoeticTrader pages.",
         attachTo: {
             element: '#step2',
             on: 'right-start'
@@ -493,7 +493,7 @@ export function useInitShepherd() {
     },
     {
         id: 'step12',
-        text: "In the sub-menu you can navigate to your settings, where you can amongst other add a profile picture and edit your patterns and mistakes. You can also see the version you are using as well as come back to this tutorial at any time as well as logout of your account (recommended when you update TradeNote version).",
+        text: "In the sub-menu you can navigate to your settings, where you can amongst other add a profile picture and edit your patterns and mistakes. You can also see the version you are using as well as come back to this tutorial at any time as well as logout of your account (recommended when you update NoeticTrader version).",
         attachTo: {
             element: '#step12',
             on: 'bottom'
@@ -510,7 +510,7 @@ export function useInitShepherd() {
     },
     {
         id: 'step13',
-        text: "That's it. You are now ready to use TradeNote. You can come back to this tutorial at any time by clicking 'Tutorial' in the sub-menu.",
+        text: "That's it. You are now ready to use NoeticTrader. You can come back to this tutorial at any time by clicking 'Tutorial' in the sub-menu.",
         buttons: [{
             text: 'Back',
             action: tour.back
