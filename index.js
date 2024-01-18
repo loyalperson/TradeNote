@@ -9,8 +9,6 @@ const MongoClient = require("mongodb").MongoClient;
 
 let databaseURI
 
-console.log(process.env)
-
 if (process.env.MONGO_URI) {
     databaseURI = process.env.MONGO_URI
 } else if (process.env.MONGO_ATLAS){
